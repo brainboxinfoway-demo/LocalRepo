@@ -12,11 +12,8 @@
 </style>
 <body>
     <p>this is a new repo.</p>
-    git init
-    git remote add origin <- Some link ->
-        git remote -v (to verify remote)
-        git branch (to check branch)
-        git branch -M main (to rename branch)
-        git push origin main22222
+        {% if section.settings.blog_show_author %}
+        <span class="article__author">Post by {{article.author}}</span>
+        {% endif %}
 </body>
 </html>
